@@ -23,7 +23,7 @@ export interface PickerProps {
   getCalendarContainer?: (triggerNode: Element) => HTMLElement;
   open?: boolean;
   onOpenChange?: (status: boolean) => void;
-  disabledDate?: (current: moment.Moment | null) => boolean;
+  disabledDate?: (current: moment.Moment | null) => boolean | null;
   dateRender?: (current: moment.Moment, today: moment.Moment) => React.ReactNode;
   autoFocus?: boolean;
   onFocus?: React.FocusEventHandler;
